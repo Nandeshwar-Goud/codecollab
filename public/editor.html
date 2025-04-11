@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Collab - Editor</title>
+    <link rel="stylesheet" href="plat.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Session Id:- <span id="sessionDisplay"></span></div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="editor-container">
+      <div class="line-numbers"></div>
+      <textarea
+        id="editor"
+        placeholder="Start typing like a notepad..."
+      ></textarea>
+    </div>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="plat.js"></script>
+  </body>
+</html>
